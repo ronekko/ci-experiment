@@ -21,6 +21,10 @@ class TestSquare(unittest.TestCase):
         y_desired = np.array([0, 1, 4, 9], dtype=np.float32)
         self.check_square(x, y_desired)
 
+    def test_invalid_input(self):
+        with self.assertRaises(TypeError):
+            functions.square('a')
+
 
 if __name__ == '__main__':
     unittest.main()
