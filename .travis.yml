@@ -8,4 +8,4 @@ install:
   - pip install numpy
 
 script:
-  - py.test
+  - pytest
